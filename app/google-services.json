@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "419853643300",
+    "firebase_url": "https://scioterra-dea38.firebaseio.com",
+    "project_id": "scioterra-dea38",
+    "storage_bucket": "scioterra-dea38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419853643300:android:c3356d77c0755a97",
+        "android_client_info": {
+          "package_name": "ph.edu.dlsu.ian_ona.scioterra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419853643300-otctlj07f3gbrlklkdgs3vrk3dac1e04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIXZHJAlNkUqTQVUXQvkXkuKtlNQeO0Xs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

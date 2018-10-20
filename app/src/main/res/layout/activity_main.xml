@@ -6,13 +6,44 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/scanBtn"
+
+        android:layout_width="308dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/buttonshape"
+        android:text="SCAN"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:padding="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/captureBtn"
+        android:drawableLeft="@drawable/ic_map"/>
+
+    <Button
+        android:id="@+id/captureBtn"
+
+        android:layout_width="308dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onCapture"
+        android:text="CAPTURE"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:padding="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableLeft="@drawable/ic_cam"/>
 
 </android.support.constraint.ConstraintLayout>
