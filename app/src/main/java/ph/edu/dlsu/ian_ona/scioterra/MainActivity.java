@@ -23,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
         dispatchTakePictureIntent();
     }
 
+    public void onScan(View view){
+
+    }
+
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {

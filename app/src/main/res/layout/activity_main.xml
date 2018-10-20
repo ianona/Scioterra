@@ -13,18 +13,21 @@
         android:layout_height="102dp"
         android:layout_marginEnd="8dp"
 
+        android:textColor="#378752"
+        android:textSize="30sp"
+
+
         android:layout_marginStart="8dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/buttonshape"
-        android:text="SCAN"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
+        android:background="@drawable/buttonshape_outline"
+        android:drawableLeft="@drawable/ic_map"
+        android:onClick="onScan"
         android:padding="26dp"
+        android:text="SCAN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/captureBtn"
-        android:drawableLeft="@drawable/ic_map"/>
+        app:layout_constraintTop_toBottomOf="@+id/captureBtn" />
 
     <Button
         android:id="@+id/captureBtn"
