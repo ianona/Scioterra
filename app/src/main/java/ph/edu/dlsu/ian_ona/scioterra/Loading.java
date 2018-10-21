@@ -24,11 +24,12 @@ public class Loading extends AppCompatActivity {
         setContentView(R.layout.activity_loading);
         //getActionBar().hide();
 
+        /*
         textView = findViewById(R.id.textView2);
         Typeface typeface = Typeface.createFromAsset(getAssets(), "fonts/Anson-Regular.otf");
         textView.setTypeface(typeface);
         textView.setGravity(Gravity.CENTER_HORIZONTAL);
-
+        */
 
         //Need to use this so that it will create a new intent on its own
         new Handler().postDelayed(new Runnable() {

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="10"
-    android:background="@color/light"
     tools:context="ph.edu.dlsu.ian_ona.scioterra.MainActivity">
 
     <RelativeLayout
@@ -15,12 +14,11 @@
         >
 
         <ImageView
-            android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/logoadw"
-            />
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/logoadw" />
 
     </RelativeLayout>
 

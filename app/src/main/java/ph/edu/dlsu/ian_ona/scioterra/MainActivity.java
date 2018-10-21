@@ -47,7 +47,21 @@ public class MainActivity extends AppCompatActivity {
                 dispatchTakePictureIntent();
             }
         });
+
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                animationWork();
+            }
+        });
     }
+    private void animationWork() {
+        Intent i = new Intent();
+        i.setClass(this, ByPass.class);
+        startActivity(i);
+        overridePendingTransition(R.anim.zoomin, R.anim.zoomout);
+    }
+
 
     public static void setWindowFlag(Activity activity, final int bits, boolean on) {
         Window win = activity.getWindow();
@@ -82,10 +96,4 @@ public class MainActivity extends AppCompatActivity {
             MainActivity.this.startActivity(intent);
         }
     }
-
-    public void onScan(View view){
-
-    }
-
-
 }
