@@ -2,7 +2,10 @@
 <resources>
     <color name="colorPrimary">#378752</color>
     <color name="colorPrimaryDark">#2b664a</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#000000</color>
     <color name="black">#000000</color>
     <color name="scioterra_green_splash">#badabf</color>
+    <color name="gradient_start">#00FFFFFF</color>
+    <color name="gradient_end">#378752</color>
+    <color name="light">#badabf</color>
 </resources>

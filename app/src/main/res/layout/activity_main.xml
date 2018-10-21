@@ -1,52 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/light"
+    tools:context="ph.edu.dlsu.ian_ona.scioterra.MainActivity">
 
-    <Button
-        android:id="@+id/scanBtn"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
 
-        android:layout_width="308dp"
-        android:layout_height="102dp"
-        android:layout_marginEnd="8dp"
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logoadw"
+            />
 
-        android:textColor="#378752"
-        android:textSize="30sp"
+    </RelativeLayout>
 
+    <GridLayout
+        android:id="@+id/mainGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="0dp"
+        android:rowCount="2">
 
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/buttonshape_outline"
-        android:drawableLeft="@drawable/ic_map"
-        android:onClick="onScan"
-        android:padding="26dp"
-        android:text="SCAN"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/captureBtn" />
+        <!--Row1-->
+        <!--Column1-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/mapBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_rowWeight="1"
+            android:backgroundTint="#8ED2C9"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
 
-    <Button
-        android:id="@+id/captureBtn"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
 
-        android:layout_width="308dp"
-        android:layout_height="102dp"
-        android:layout_marginEnd="8dp"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/maplogo" />
+            </LinearLayout>
 
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="120dp"
-        android:background="@drawable/buttonshape"
-        android:onClick="onCapture"
-        android:text="CAPTURE"
-        android:textColor="#FFFFFF"
-        android:textSize="30sp"
-        android:padding="26dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:drawableLeft="@drawable/ic_cam"/>
+        </android.support.v7.widget.CardView>
 
-</android.support.constraint.ConstraintLayout>
+        <!--Column2-->
+        <android.support.v7.widget.CardView
+            android:id="@+id/scanBtn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_rowWeight="1"
+            android:backgroundTint="#00AAA0"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/scanlogo" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
